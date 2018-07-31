@@ -1,0 +1,2 @@
+# Check the version of OS
+uname -m # if returns i686 -> 32 bit, if returns x86_64 then 64 bit
