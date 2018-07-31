@@ -1,0 +1,7 @@
+# Install Python
+sudo apt-get update # pdate library package
+sudo apt-get install python3 # install python3
+sudo apt-get install idle3 # install IDLE IDE for python
+sudo apt-get install python3-pip # install pip
+
+
