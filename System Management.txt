@@ -1,2 +1,7 @@
 # Check the version of OS
 uname -m # if returns i686 -> 32 bit, if returns x86_64 then 64 bit
+
+
+# UBUNTU - Change the position of the Unity Launcher
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+gsettings set com.canonical.Unity.Launcher launcher-position Left
