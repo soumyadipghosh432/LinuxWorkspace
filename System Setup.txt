@@ -1,9 +1,0 @@
-# Install Python
-sudo apt-get update # pdate library package
-sudo apt-get install python3 # install python3
-sudo apt-get install idle3 # install IDLE IDE for python
-sudo apt-get install python3-pip # install pip
-sudo apt install pip # install pip
-pip3 install pytz # install the external module for timezone in python
-pip install pyspark # install Apache Spark for python
-
