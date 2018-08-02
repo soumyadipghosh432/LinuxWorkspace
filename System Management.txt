@@ -1,7 +1,25 @@
-# Check the version of OS
+################ Check the version of OS ################
 uname -m # if returns i686 -> 32 bit, if returns x86_64 then 64 bit
 
 
-# UBUNTU - Change the position of the Unity Launcher
+################ UBUNTU - Change the position of the Unity Launcher ################
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 gsettings set com.canonical.Unity.Launcher launcher-position Left
+
+
+################ Unzip / Decompress ################
+tar xvzf file.tar.gz -C /path/to/somedirectory
+
+x: This option tells tar to extract the files.
+v: The “v” stands for “verbose.” This option will list all of the files one by one in the archive.
+z: The z option is very important and tells the tar command to uncompress the file (gzip).
+f: This options tells tar that you are going to give it a file name to work with.
+-C: argument is used to specify the path to place the file. By defaults files will be extracted into the current directory. To change the directory, we use -C option
+
+tar -xvzf file.tar.gz test.doc # To extract test.doc file from the file.tar.gz tarball
+
+tar -tvf file.tar.gz # To view a detailed table of content by listing all files in archive
+
+gunzip file.gz # To extract the .gz file without tar
+
+tar xvjf file.tar.bz2 # If your tar file is compressed using a bZip2 compressor
