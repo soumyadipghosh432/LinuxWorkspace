@@ -19,4 +19,15 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer # Oracle JDK 8
 sudo apt-get install oracle-java9-installer # Oracle JDK 9
 
+## To configure which version is the default
+sudo update-alternatives --config command
+=> In palce of command use java (for java version), javac (java compiler), javadoc (java Documnetation),jarsigner (JAR Signing tool)
+
+
+# set JAVA_HOME
+1. Get the java installation location : sudo update-alternatives --config java
+2. Edit the environment file : sudo nano /etc/environment <<or>> sudo vi/etc/environment
+3. Add the location at end of file : JAVA_HOME="/usr/lib/jvm/java-8-oracle"  # change the location accordingly
+4. Reload environment : source /etc/environment
+5. Test configuration : echo $JAVA_HOME
 
