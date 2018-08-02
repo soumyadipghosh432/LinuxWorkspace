@@ -26,7 +26,7 @@ sudo update-alternatives --config command
 
 # set JAVA_HOME
 1. Get the java installation location : sudo update-alternatives --config java
-2. Edit the environment file : sudo nano /etc/environment <<or>> sudo vi/etc/environment
+2. Edit the environment file : sudo nano /etc/environment <<or>> sudo vi /etc/environment
 3. Add the location at end of file : JAVA_HOME="/usr/lib/jvm/java-8-oracle"  # change the location accordingly
 4. Reload environment : source /etc/environment
 5. Test configuration : echo $JAVA_HOME
