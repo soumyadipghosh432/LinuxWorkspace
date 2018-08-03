@@ -61,3 +61,14 @@ sudo update-alternatives --config command
 5. Update : sudo apt update
 6. Install : sudo apt install google-chrome-stable
   # With Chrome built in Flash Player is downloaded at : /opt/google/chrome/PepperFlash
+  
+
+################## Install Oracle VitualBox ####################
+sudo apt-get update
+sudo apt-get upgrade
+sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian `lsb_release -cs` contrib" #need to add Oracle VirtualBox PPA to Ubuntu system
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add - # Import VirtualBox Package Sign Key
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - # Import VirtualBox Package Sign Key
+sudo apt-get update #Update
+sudo apt-get install virtualbox-5.2 #Install
+
