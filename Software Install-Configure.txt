@@ -72,3 +72,16 @@ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key a
 sudo apt-get update #Update
 sudo apt-get install virtualbox-5.2 #Install
 
+
+################# Install Hadoop ##################
+1. Install JDK
+2. Set JAVA_HOME
+3. Go to : http://hadoop.apache.org/releases.html
+4. Click on binary for most recent release
+5. Copy the URL for mirror. e.g. http://www-us.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz
+6. Get binaries : wget http://apache.mirrors.tds.net/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+<OR>
+6. Download the binaries manually from the link by clicking the download link.
+7. Unzip : tar -xzvf hadoop-2.7.3.tar.gz
+8. sudo mv hadoop-2.7.3 /usr/local/hadoop
+9. Run Hadoop : /usr/local/hadoop/bin/hadoop
