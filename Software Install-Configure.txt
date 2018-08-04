@@ -98,3 +98,7 @@ Before upgrading your system to a new Ubuntu release (i.e. from Ubuntu 16.04 to 
 sudo apt-add-repository ppa:diesch/testing
 sudo apt-get update
 sudo apt-get install classicmenu-indicator
+
+
+################ install Unity Tweak tool for Unity luancher customization #########################
+sudo apt-get install unity-tweak-tool
