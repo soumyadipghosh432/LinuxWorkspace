@@ -85,3 +85,10 @@ sudo apt-get install virtualbox-5.2 #Install
 7. Unzip : tar -xzvf hadoop-2.7.3.tar.gz
 8. sudo mv hadoop-2.7.3 /usr/local/hadoop
 9. Run Hadoop : /usr/local/hadoop/bin/hadoop
+
+
+################## Install Nautilus  File Manager #################
+1. sudo add-apt-repository ppa:gnome3-team/gnome3
+Before upgrading your system to a new Ubuntu release (i.e. from Ubuntu 16.04 to 16.10), you should run 'ppa-purge ppa:gnome3-team/gnome3' first.
+2. sudo apt-get update
+3. sudo apt-get install nautilus
