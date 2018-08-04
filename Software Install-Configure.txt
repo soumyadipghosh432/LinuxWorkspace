@@ -92,3 +92,9 @@ sudo apt-get install virtualbox-5.2 #Install
 Before upgrading your system to a new Ubuntu release (i.e. from Ubuntu 16.04 to 16.10), you should run 'ppa-purge ppa:gnome3-team/gnome3' first.
 2. sudo apt-get update
 3. sudo apt-get install nautilus
+
+
+################# Install ClassicMenu Indicator ######################
+sudo apt-add-repository ppa:diesch/testing
+sudo apt-get update
+sudo apt-get install classicmenu-indicator
