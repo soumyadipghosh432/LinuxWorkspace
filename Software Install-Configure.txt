@@ -102,3 +102,14 @@ sudo apt-get install classicmenu-indicator
 
 ################ install Unity Tweak tool for Unity luancher customization #########################
 sudo apt-get install unity-tweak-tool
+
+################ install IntelliJ IDEA #########################
+
+1. Community Version
+sudo snap install intellij-idea-community --classic --edge
+
+2. Ultimate Version (Paid)
+sudo snap install intellij-idea-ultimate --classic --edge
+
+Run IntelliJ IDEA EAP Community edition: $intellij-idea-community
+Run IntelliJ IDEA EAP Ultimate edition: $intellij-idea-ultimate
