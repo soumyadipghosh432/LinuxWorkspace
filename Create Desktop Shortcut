@@ -1,0 +1,17 @@
+1. Get the Full Path of the executable of the application
+2. vi ~/Desktop/IntelliJ.desktop
+3. Enter content as :
+
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/snap/intellij-idea-community/72/bin/idea.sh
+Name=IntelliJ
+Comment=Intelli J IDEA Community
+Icon=/snap/intellij-idea-community/72/bin/idea.png
+
+4. Go to Desktop and change the permission of the file to executable.
+5. Double Click. If warning given for untrusted souce click on Trust and Launch.
+6. Done !
