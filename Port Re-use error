@@ -1,0 +1,15 @@
+OSError:[Errno 98] Address already in use python
+
+################## METHOD 1 :##############################
+
+$ ps -fA | grep python
+501 81211 12368   0  10:11PM ttys000    0:03.12  
+python -m SimpleHTTPServer {Here look for the process that is taking the port}
+
+$ kill 81211
+
+
+################## METHOD 2 :##############################
+It is possible to override this behavior by setting SO_REUSEADDR option on a socket. For example:
+
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
