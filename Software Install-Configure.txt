@@ -28,6 +28,25 @@ sudo apt install pip # install pip
 pip3 install pytz # install the external module for timezone in python
 pip install pyspark # install Apache Spark for python
 
+################## Install Python2.7 along with Python3 ###############
+1. Pre-requisite
+sudo apt-get update
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+2. Download
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
+sudo tar xzf Python-2.7.14.tgz
+
+3. Compile Source
+cd Python-2.7.14
+sudo ./configure --enable-optimizations
+sudo make altinstall
+## make altinstall is used to prevent replacing the default python binary file /usr/bin/python.
+
+4. Check Python Version
+python2.7 -V
 
 ################### Install JDK ###################
 sudo apt-get update
