@@ -28,6 +28,32 @@ sudo apt install pip # install pip
 pip3 install pytz # install the external module for timezone in python
 pip install pyspark # install Apache Spark for python
 
+################## Install Django using pip3 ####################
+pip3 install Django
+## Verify installation : django-admin.py --version 
+
+
+################## Install MongoDB Engine for Django ################
+# Django-nonrel
+pip install git+https://github.com/django-nonrel/django@nonrel-1.5
+
+# djangotoolbox
+pip install git+https://github.com/django-nonrel/djangotoolbox
+
+# Django MongoDB Engine. You should use the latest Git revision.
+pip install git+https://github.com/django-nonrel/mongodb-engine
+
+# Configuration. Database setup is easy (see also the Django database setup docs):
+
+DATABASES = {
+   'default' : {
+      'ENGINE' : 'django_mongodb_engine',
+      'NAME' : 'my_database'
+   }
+}
+
+Django MongoDB Engine also takes into account the HOST, PORT, USER, PASSWORD and OPTIONS settings.
+
 ################## Install Python2.7 along with Python3 ###############
 1. Pre-requisite
 sudo apt-get update
